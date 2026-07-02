@@ -18,14 +18,14 @@ Remember to add /32 after your address
 
 ## Uploading Cloudformation template to AWS
 
-Before uploading the template, this template uses t3.small instance, since it is free tier eligible. I recommend to switch t3.medium or better for smoother experience, by simply editing the template file and changing "InstanceType" value to your favourable instance.
+Before uploading the template, this template uses t3.small instance. I recommend to switch t3.medium or better for smoother experience, by simply editing the template file and changing "InstanceType" value to your favourable instance.
 
 Also for newer minecraft version for the server, go to minecraft server site and copy the download link and paste it to templates script part and change the url after the wget.
 
 1. Login to AWS Console and go to cloudformation.
 2. Press "Create stack" -> "With new resources (standard)".
 3. Select "Upload a template file" and choose the file (cloudformationec2.yaml) and press "next".
-4. Write own stack name and put your own IPAdress on the parameters box. Remeber to put /32 after your address.
+4. Write own stack name and put your own IP address on the parameters box. Remember to put /32 after your address.
 5. You can click next and go straight to "submit"
 
 ## Starting the server
@@ -68,7 +68,7 @@ Then:
 
 1. Navigate to security groups and select security group that the stack created.
 2. Go to inbound rules -> edit inbound rules.
-3. "Add rule" -> Type: Custom TCP, port: 25565, source: friends IPAdress
+3. "Add rule" -> Type: Custom TCP, port: 25565, source: friends IP address
 4. Then save rules
 
 
