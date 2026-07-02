@@ -33,13 +33,7 @@ Resources:
     Properties:
       GroupDescription: Security group for Minecraft server
       SecurityGroupIngress:
-        # SSH for maintenance
-        - IpProtocol: tcp
-          FromPort: 22
-          ToPort: 22
-          CidrIp: !Ref CreatorIp
-          Description: SSH connection (for maintenance)
-
+        
         # Allow to connect to Minecraft server
         - IpProtocol: tcp
           FromPort: 25565
