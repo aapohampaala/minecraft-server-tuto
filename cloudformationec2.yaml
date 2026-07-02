@@ -62,7 +62,7 @@ Resources:
       UserData:
         Fn::Base64: !Sub |
           #!/bin/bash
-          # Update system and install Java 21
+          # Update system and install Java 25
           dnf update -y
           dnf install -y java-25-amazon-corretto-headless screen
 
