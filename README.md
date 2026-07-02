@@ -71,6 +71,22 @@ Then:
 3. "Add rule" -> Type: Custom TCP, port: 25565, source: friends IP address
 4. Then save rules
 
+## ⚠️ A Note on AWS Costs
+
+While the `t3.small` instance may be shown as Free Tier eligible in the AWS Console, please be aware of how AWS pricing works:
+
+* The AWS Free Tier typically applies only to the **first 12 months** of a new AWS account.
+* It includes a limit of **750 hours per month** of compute time.
+* If your account is out of the Free Tier period, **you will be billed per hour** for the time the instance is running.
+* If you use a greater instance, the costs will be higher.
+
+**Best Practice to Save Money & Your World:**
+When you and your friends are done playing, **always stop the Minecraft server safely first** to avoid losing your progress or corrupting the world. 
+
+1. Go to SSM Session Manager, attach to your screen (`sudo su - ec2-user` -> `screen -r minecraft`), type `stop` and hit Enter.
+2. Once the server has safely shut down, go to the AWS Console, select your instance, and choose **Instance state -> Stop instance**.
+
+This halts the hourly compute charges. You can easily start it again when you want to play!
 
 # Author
 Aapo Hampaala
