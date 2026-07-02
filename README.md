@@ -90,7 +90,7 @@ This halts the hourly compute charges. You can easily start it again when you wa
 
 # Author
 Aapo Hampaala
-
+https://github.com/aapohampaala
    
    
 
